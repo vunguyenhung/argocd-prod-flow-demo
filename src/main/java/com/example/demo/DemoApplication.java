@@ -18,4 +18,8 @@ public class DemoApplication {
     return String.format("Hello %s!", name);
   }
 
+  @GetMapping("/")
+  public String index() {
+    return "The application is running";
+  }
 }
