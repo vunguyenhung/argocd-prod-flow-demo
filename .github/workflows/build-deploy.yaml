@@ -59,7 +59,7 @@ jobs:
             });
         env:
           REPOSITORY_OWNER: ${{ github.repository_owner }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
           DEPLOYMENT_REPO: "argocd-prod-flow-demo-deployment"
           WORKFLOW_ID: "trigger-deployment.yaml"
           WORKFLOW_REF: "main"
